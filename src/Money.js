@@ -4,10 +4,10 @@ export class Money {
     this.minorAmount = minorAmount;
     this.currency = "EUR";
   }
-  toDecimal() {
+  toCents() {
     return this.majorAmount * 10 * 10 + this.minorAmount;
   }
   compareTo(other) {
-    return this.toDecimal() - other.toDecimal();
+    return this.toCents() - other.toDecimal();
   }
 }
