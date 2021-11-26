@@ -6,12 +6,15 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll",
+    "test:mutator": "NODE_OPTIONS=--experimental-vm-modules npx stryker run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@stryker-mutator/core": "^5.5.0",
+    "@stryker-mutator/jest-runner": "^5.5.0",
     "@types/jest": "^27.0.3",
     "jest": "^27.3.1"
   },
